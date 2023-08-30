@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root{
+    --primeiracor:#111111;
+    --segundacor:#2f2f2f;
+    --terceiracor:#f6f6f6;
+    --quartacor: #ffcb74;
+
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.btn{
+    font-size: 1rem;
+    color: var(--quartacor);
+    background-color: var(--segundacor);
+    width: 8rem;
+    padding: 1rem;
+    border: none;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+body{
+    background-color: var(--primeiracor);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--primeiracor);
+
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 15vw 65vw;
+    grid-template-rows: 10vh 70vh;
+
+}
+#newproject{
+    margin-top: auto;
+}
+.projectbar{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    color: var(--quartacor);
+    font-size: 3rem;
+    align-self: flex-end;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+aside{
+    background-color:var(--segundacor);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+
+
+}
+main{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: var(--terceiracor);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.formrow{
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#fecharmodal{
+    position: relative;
+    top: -7vh;
+    left: 7vw;
+}
+.delete{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--segundacor);
+    color: var(--quartacor);
+}
+
+#formcontainer{
+    background-color:var(--quartacor);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30rem;
+    width: 20rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}

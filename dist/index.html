@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    
+    <div class="container">
+        <header>
+            <h1>To-Do-List</h1>
+        </header>
+        <aside id="aside">
+            <ul>
+                <li><button class="btn" id="home">Home</button></li>
+                <li><button class="btn" id="today">Today</button></li>
+                <li><button class="btn" id="week">Week</button></li>
+                <li><button class="btn" id="projects">Projects</button></li>
+                
+            </ul>
+            <ul id="projectbar">
+                <!-- <li class="btn">Novo projeto <button class="delete">x</button></li>
+                <li class="btn">Novo projeto <button class="delete">x</button></li> -->
+            </ul>
+
+            <button class="btn" id="newproject">+</button>
+        </aside>
+        <main id="posts">
+            <!-- <div class="post">
+                <h2>title</h2>
+                <p>descricaosss ad asdad</p>
+                <p>data: </p>
+                <p>urgencias</p>    
+                <button class="delete"> x </button>
+            </div> -->
+            
+        </main>
+    </div>
+
+    <div id="formcontainer">
+        <button id="fecharmodal" class="delete">x</button>
+        <form action="" method="">
+            <div class="formrow">
+                <label for="project">Projeto:</label>
+                <input type="text" id="project" name="project" />
+            </div> 
+            <div class="formrow">
+                <label for="title">Titulo:</label>
+                <input type="text" id="title" name="title" />
+            </div> 
+            <div class="formrow"> 
+                <label for="description">Descrição:</label>
+                <input type="text"" id="description" name="description" />
+            </div>
+            <div class="formrow">  
+                <label for="date">Message:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="formrow"> 
+                <label for="priority">Urgente:</label>
+                <input type="checkbox"  name="priority" id="priority">
+            </div>
+            
+          </form>
+          <button class="btn" id="submit">Submit</button>
+    </div>
+    
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
